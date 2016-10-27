@@ -1,6 +1,6 @@
 
 # Version everything with npm
-##### Version: 1.1.1-3
+##### Version: 1.1.1-4
 
 Versioning internal projects is often an afterthought -- at best. Too often updating version numbers is completely forgotten.
 
@@ -71,7 +71,7 @@ Putting it all together, here's the `package.json` file with the script embedded
 ```json
 {
   "name": "version-everything",
-  "version": "1.1.1",
+  "version": "1.1.1-4",
   "description": "Version everything with npm",
   "version_files": [
     "README.md",
@@ -80,7 +80,7 @@ Putting it all together, here's the `package.json` file with the script embedded
     "manifest.json"
   ],
   "scripts": {
-    "version": "node -e \"eval(require('./package.json').version_script_src.join(''))\" && git add -u"
+    "version": "1.1.1-4"eval(require('./package.json').version_script_src.join(''))\" && git add -u"
   },
   "author": "joe maller <joe@joemaller.com>",
   "license": "MIT",
