@@ -7,7 +7,7 @@
   "scripts": {
     "dump-vars": "node dump-vars.js",
     "env": "env",
-    "version": "shx sed -i \"s/$npm_package_version_regex/\\$1\\$2$npm_package_version\\$3/g\" $npm_package_version_files"
+    "version": "shx sed -i \"s/$npm_package_version_regex/\\$1\\$2$npm_package_version\\$3/g\" $npm_package_version_files && git add -u"
   },
   "author": {
     "name": "Joe Maller",
